@@ -4,6 +4,7 @@ Personal notes about Smart Contract development, especially on a security point 
 **ToDo**
 - Creare un progetto funzionante in solidity
 - Creare un progetto funzionante in Vyper
+- Creare un progetto NFT
 - Completare le sezioni delle note
 
 **Index**
