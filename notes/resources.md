@@ -1,3 +1,5 @@
+[HOME](https://github.com/seeu-inspace/reference-smart-contracts/blob/main/README.md)
+
 # Resources
 
 List of various resources to learn.
