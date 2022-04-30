@@ -2,7 +2,7 @@
 
 # Resources
 
-List of various resources to learn.
+List of various resources to learn
 
 ### Solidity
 
