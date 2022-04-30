@@ -49,5 +49,3 @@ List of various resources to learn.
 ### Bug Bounty
 - https://immunefi.medium.com/
 - https://medium.com/immunefi/how-robert-forster-of-armor-finds-big-bugs-36656ab7b82c
-
----
