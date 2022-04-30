@@ -3,7 +3,7 @@ Personal notes about Smart Contract development, especially on a security point 
 
 - [Resources](https://github.com/seeu-inspace/reference-smart-contracts/blob/main/notes/resources.md)
 - Introduction
-- Smart Contract development
-- Smart Contract security
+- Development
+- Security
 - Vulnerabilities
 - Penetration Testing Tools
