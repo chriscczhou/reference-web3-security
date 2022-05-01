@@ -15,4 +15,4 @@ Pubblicare una volta che ho finito di trascrivere le note prese in precedenza
 - Development
 - Security
 - Vulnerabilities
-- Penetration Testing Tools
+- Tools
