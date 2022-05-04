@@ -17,8 +17,6 @@ Personal notes about Smart Contract development, especially on a security point 
 
 ## Resources
 
-List of various resources to learn
-
 ### Solidity
 
 - https://cryptozombies.io/
