@@ -1,4 +1,4 @@
-# Web3 Security notes
+# Web3 security notes
 Personal notes about Web3 on a security point of view
 
 **ToDo**
