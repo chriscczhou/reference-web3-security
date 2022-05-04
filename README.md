@@ -1,5 +1,5 @@
-# Smart Contracts notes
-Personal notes about Smart Contract development, especially on a security point of view
+# Web3 Security notes
+Personal notes about Web3 on a security point of view
 
 **ToDo**
 - Creare un progetto funzionante in solidity
