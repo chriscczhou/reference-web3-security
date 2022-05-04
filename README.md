@@ -12,7 +12,7 @@ Personal notes about Smart Contract development, especially on a security point 
 - [Introduction](#Introduction)
 - Development
 - Security
-- Vulnerabilities
+- [Vulnerabilities](https://github.com/seeu-inspace/reference-smart-contracts/blob/main/notes/vulns.md)
 - [Tools](#tools)
 
 ## Resources
