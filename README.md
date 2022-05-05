@@ -273,7 +273,7 @@ function kill() public {
 
 An example of how problematic this can become:
 
-![ETH-noob-calls-kill-function](https://x)
+<img src="https://raw.githubusercontent.com/seeu-inspace/reference-web3-security/main/img/eth-noob-kill-function.png" width="50%" height="50%">
 
 
 **Remediation**
@@ -330,7 +330,7 @@ To install Metamask go here, and follow the instructions> https://metamask.io/
 
 To connect to a decentralized app (or DApp) the process is often the same for all applications. An example is UniSwap: unlock the Metamask application, press the Connect Wallet button and select Metamask.
 
-![UniSwap](https://raw.githubusercontent.com/seeu-inspace/reference-smart-contracts/main/notes/Immagine%202022-05-04%20211419.png?token=GHSAT0AAAAAABT7ATKXKOW2HXNDHLVQBB6QYTS2H2Q)
+<img src="https://raw.githubusercontent.com/seeu-inspace/reference-web3-security/main/img/uniswap-connect.png" width="75%" height="75%">
 
 ### [Etherscan.io](https://etherscan.io)
 
