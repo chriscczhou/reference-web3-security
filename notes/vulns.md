@@ -54,7 +54,7 @@ function batchTransfer(address[] memory _receivers, uint256 _value) public payab
 
 An input like `["<ADDR_1>","<ADDR_2>"], 0x8000000000000000000000000000000000000000000000000000000000000000` for the function `batchTransfer` would trigger this vulnerability.
 
-**Resolution**
+**Remediation**
 
 As seen previously, the problem lies in the variable `amount` which, having no input controls, is subject to a Batch Overflow. The solution to this problem is to implement a check on the value received as an input. An example is the following:
 
@@ -149,13 +149,74 @@ contract simpleReentrancyAttack{
 3. The malicious smart contract receives the funds and no further instructions, so it repeats the step 2.
 
 
-**Resolution**
+**Remediation**
 
+Implement Checks Effects Interactions Pattern: A secure code-writing pattern that prevents an attacker from creating loops that allow him to re-enter the contract multiple times without blocking.
+
+- Verify that the requirements are met before continuing the execution;
+- Update balances and make changes before interacting with an external actor;
+- Finally, after the transaction has been validated and the changes have been made, interactions with the external entity are allowed.
 
 ### Authorization issues
 
+A function can be: External, Public, Internal or Private. Defining this aspect is very important as there is a risk of allowing potentially harmful operations or giving administrative privileges to any user.
 
-**Resolution**
+A first example is the following `withdraw` function. As you can see, it does not check if the user requesting a certain amount has the funds to request the withdrawal.
+
+```
+function withdraw(uint amount) public payable {
+	msg.sender.transfer(amount);
+}
+```
+
+Another example is the following `kill()` function. The `kill` function contains the method `selfdestruct` that allows to withdraw all the contract funds in the user's balance which activates the functionality and invalidates the smart contract. Since this function is public, any user can have access to it.
+
+```
+function kill() public {
+	selfdestruct(msg.sender);
+}
+```
+
+An example of how problematic this can become:
+
+![ETH-noob-calls-kill-function](https://x)
+
+
+**Remediation**
+
+A solution for the first scenario is very simple, it just needs a check to be implemented.
+
+For the second example, you can add the following modifier. In the modifier there is the condition that whoever is carrying out the function must be the owner of the contract.
+
+```
+address owner;
+
+modifier OnlyOwner(){
+    require(msg.sender == owner);
+    
+    _;
+
+}
+```
+
+So the fixed code would look like this:
+
+```
+mapping (address =>uint) balances;
+    
+address owner;
+    
+modifier OnlyOwner(){
+    require(msg.sender == owner);
+    
+    _;
+
+}
+
+function kill() public OnlyOwner{
+		selfdestruct(msg.sender);
+}
+```
 
 ### Use of components with known vulnerabilities
 
