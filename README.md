@@ -5,7 +5,6 @@ Personal notes about Web3 on a security point of view
 - Creare un progetto funzionante in solidity
 - Creare un progetto funzionante in Vyper
 - Creare un progetto NFT
-- Completare le sezioni delle note > Pubblicare una volta che ho finito di trascrivere le note prese in precedenza
 
 **Index**
 - [Resources](#Resources)
