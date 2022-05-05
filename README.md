@@ -119,7 +119,7 @@ In a page of a Contract:
 
 For other types of addresses (wallet and token tracker) there aren't other relevant details.
 
-### remix.ethereum.org
+### [remix.ethereum.org](https://remix.ethereum.org)
 
 An IDE that provides a compiler, debugger, and various test accounts with some $ETH for each. This is very useful for testing functions without impacting the real Smart Contract target of the tests.
 
