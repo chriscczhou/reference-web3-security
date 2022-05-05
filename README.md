@@ -51,6 +51,9 @@ Personal notes about Web3 on a security point of view
 - https://github.com/smartdec/classification
 - https://www.shielder.com/blog/2022/04/a-sneak-peek-into-smart-contracts-reversing-and-emulation/
 - https://medium.com/immunefi/hacking-the-blockchain-an-ultimate-guide-4f34b33c6e8b
+- https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#installation
+- https://betterprogramming.pub/the-encyclopedia-of-smart-contract-attacks-vulnerabilities-dfc1129fdaac
+- https://consensys.github.io/smart-contract-best-practices/known_attacks/
 
 ### Laboratories
 - https://www.damnvulnerabledefi.xyz/
