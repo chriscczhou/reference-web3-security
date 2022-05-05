@@ -56,6 +56,19 @@ An input like `["<ADDR_1>","<ADDR_2>"], 0x80000000000000000000000000000000000000
 
 **Resolution**
 
+As seen previously, the problem lies in the variable `amount` which, having no input controls, is subject to a Batch Overflow. The solution to this problem is to implement a check on the value received as an input. An example is the following:
+
+```
+if (a == 0) return (true, 0);
+uint256 c = a * b;
+if (c / a != b) return (false, 0);
+return (true, c);
+```
+
+The variable `uint256 c` is the multiplication of the address of recipient `a` by the value of the number of tokens that must receive `b`, giving the result `c`. To make sure that the value `c` is not Overfloded, we check that the division of `c` / `a` is equal to `b`. If not, it would indicate that the value `c` makes no sense and has been compromised.
+
+To fix this vulnerability, and other integer overflows and underflows, the [SafeMath by OpenZeppelin library](https://github.com/OpenZeppelin/openzeppelin-contracts) can be used. SafeMath provides four functions: Add, Subtract, Multiply, Divide. Each of them performs a check on the operation to verify that the data received in input is valid.
+
 ### Reentrancy Vulnerabilities
 
 A Reentrancy vulnerability is a type of attack to drain the bit-by-bit liquidity of a contract with an insecure code-writing pattern.
