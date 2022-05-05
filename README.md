@@ -107,7 +107,7 @@ To connect to a decentralized app (or DApp) the process is often the same for al
 
 ![UniSwap](https://raw.githubusercontent.com/seeu-inspace/reference-smart-contracts/main/notes/Immagine%202022-05-04%20211419.png?token=GHSAT0AAAAAABT7ATKXKOW2HXNDHLVQBB6QYTS2H2Q)
 
-### Etherscan.io
+### [Etherscan.io](https://etherscan.io)
 
 Etherscan.io is the primary reference tool for exploring the Ethereum blockchain.
 
