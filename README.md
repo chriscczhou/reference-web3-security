@@ -17,7 +17,7 @@ Personal notes about Web3 on a security point of view
   - [Batch Overflow](#batch-overflow)
   - [Reentrancy Vulnerabilities](#reentrancy-vulnerabilities)
   - [Authorization issues](#authorization-issues)
-  - [Use of components with known vulnerabilities](#use-of-components-with-known-vulnerabilities")
+  - [Use of components with known vulnerabilities](#use-of-components-with-known-vulnerabilities)
 - [Tools](#tools)
 
 ## Resources
