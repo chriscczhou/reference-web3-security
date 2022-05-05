@@ -13,6 +13,11 @@ Personal notes about Web3 on a security point of view
 - Development
 - Security
 - [Vulnerabilities](https://github.com/seeu-inspace/reference-smart-contracts/blob/main/notes/vulns.md)
+  - Human errors
+  - Batch Overflow
+  - Reentrancy Vulnerabilities
+  - Authorization issues
+  - Use of components with known vulnerabilities
 - [Tools](#tools)
 
 ## Resources
