@@ -54,6 +54,7 @@ function batchTransfer(address[] memory _receivers, uint256 _value) public payab
 
 An input like `["<ADDR_1>","<ADDR_2>"], 0x8000000000000000000000000000000000000000000000000000000000000000` for the function `batchTransfer` would trigger this vulnerability.
 
+**Resolution**
 
 ### Reentrancy Vulnerabilities
 
@@ -134,10 +135,17 @@ contract simpleReentrancyAttack{
 2. Not having received further instructions after receiving the funds, the fallback function is triggered immediately. When the latter is activated, the smart contract has not yet updated the attacker's balance, so it will proceed to carry out the withdrawal operation with the previous balance;
 3. The malicious smart contract receives the funds and no further instructions, so it repeats the step 2.
 
+
+**Resolution**
+
+
 ### Authorization issues
 
 
+**Resolution**
 
 ### Use of components with known vulnerabilities
 
+An outdated compiler with known vulnerabilities may have been used to compile the smart contract. Another possibility is that libraries with known vulnerabilities have been imported.
 
+Another case that I happened to see in the wild is the `import` linking libraries from github then removed. For example, an attempt was made to import SafeMath but the now outdated version was no longer present in the specified endpoint. In this case, some smart contract developers prefer to deploy without having imports that reference external enpoints.
