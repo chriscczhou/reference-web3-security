@@ -74,6 +74,7 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 ### Bug Bounty
 - https://immunefi.medium.com/
 - https://medium.com/immunefi/how-robert-forster-of-armor-finds-big-bugs-36656ab7b82c
+- https://blog.yeswehack.com/yeswerhackers/getting-started-smart-contract-bug-bounty/
 
 ## Introduction
 
