@@ -53,6 +53,9 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 - https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#installation
 - https://betterprogramming.pub/the-encyclopedia-of-smart-contract-attacks-vulnerabilities-dfc1129fdaac
 - https://consensys.github.io/smart-contract-best-practices/known_attacks/
+- https://www.youtube.com/watch?v=ozqOlUVKL1s
+- https://www.youtube.com/watch?v=WP-EnGhIYEc
+- https://www.youtube.com/watch?v=4Mm3BCyHtDY
 
 ### Laboratories
 - https://www.damnvulnerabledefi.xyz/
