@@ -28,6 +28,14 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 - https://github.com/ethereumbook/ethereumbook
 - https://www.youtube.com/watch?v=HR679xTt8tg
 
+### Rust
+
+https://www.youtube.com/watch?v=MsocPEZBd-M
+
+### Vyper
+
+https://www.youtube.com/watch?v=Y6o9kNqRV2Y&list=PLFPZ8ai7J-iQMTChqif-XVP8DYABA4rx1
+
 ### Smart Contract Security
 - https://consensys.github.io/smart-contract-best-practices/
 - https://github.com/ethereumbook/ethereumbook/blob/develop/09smart-contracts-security.asciidfoc
