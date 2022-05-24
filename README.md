@@ -73,11 +73,12 @@ https://www.youtube.com/watch?v=Y6o9kNqRV2Y&list=PLFPZ8ai7J-iQMTChqif-XVP8DYABA4
 - https://github.com/tinchoabbate/defcon28-talk-challenge
 - https://github.com/blockthreat/blocksec-ctfs
 
-### Exploitation examples
+### Exploitation / PT examples
 - https://github.com/openzeppelin/exploit-uniswap
 - https://github.com/tinchoabbate/function-clashing-poc
 - https://blog.openzeppelin.com/backdooring-gnosis-safe-multisig-wallets/
 - https://blog.openzeppelin.com/security-audits/
+- https://mobile.twitter.com/tornadocash/status/1204745639759884289
 
 ### Bug Bounty
 - https://immunefi.medium.com/
