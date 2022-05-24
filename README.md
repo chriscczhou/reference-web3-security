@@ -30,11 +30,12 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 
 ### Rust
 
-https://www.youtube.com/watch?v=MsocPEZBd-M
+- https://www.youtube.com/watch?v=MsocPEZBd-M
 
 ### Vyper
 
-https://www.youtube.com/watch?v=Y6o9kNqRV2Y&list=PLFPZ8ai7J-iQMTChqif-XVP8DYABA4rx1
+- https://www.youtube.com/watch?v=Y6o9kNqRV2Y&list=PLFPZ8ai7J-iQMTChqif-XVP8DYABA4rx1
+- https://github.com/vyperlang/vyper
 
 ### Smart Contract Security
 - https://consensys.github.io/smart-contract-best-practices/
