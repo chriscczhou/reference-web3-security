@@ -8,6 +8,7 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 - [Resources](#Resources)
 - [Introduction](#Introduction)
 - Development
+  - [Solidity](https://github.com/seeu-inspace/reference-web3-security/tree/main/solidity)
 - Security
 - [Vulnerabilities](https://github.com/seeu-inspace/reference-smart-contracts/blob/main/notes/vulns.md)
   - [Human errors](#human-errors)
