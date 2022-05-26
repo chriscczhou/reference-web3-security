@@ -66,6 +66,7 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 
 ### Laboratories
 - https://www.damnvulnerabledefi.xyz/
+  - https://www.youtube.com/watch?v=A5s9aez43Co&list=PLO5VPQH6OWdXKPThrch6U0imGdD3pHLXi 
 - https://gitlab.com/badbounty/dvcw
 - https://ethernaut.openzeppelin.com/
 - https://ctf.paradigm.xyz/
