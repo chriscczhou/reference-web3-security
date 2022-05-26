@@ -3,8 +3,6 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 
 **ToDo**
 - Creare un progetto funzionante in solidity
-- Creare un progetto funzionante in Vyper
-- Creare un progetto NFT
 
 **Index**
 - [Resources](#Resources)
