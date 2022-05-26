@@ -32,7 +32,7 @@ contract Lottery {
     }
 
     function getRandomNumber() public view returns (uint){
-        
+        return uint(keccak256(abi.encodePacked(owner, block.timestamp)));
     }
 
     // this function kill the smart contract
