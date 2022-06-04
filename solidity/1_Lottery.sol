@@ -15,9 +15,9 @@ contract Lottery {
 
     // this modifier will allow us to implement onlyOwner for a function
     // meaning that only the owner of the smart contract can call it
-    modifier OnlyOwner(){
+    modifier onlyOwner(){
         require(msg.sender == owner);
-        _;
+        _; // this means: whatever code there is after onlyOwner, run it only after the requirement is met
     }
 
     // in the context of a function, the address is the one that called that function
@@ -35,9 +35,19 @@ contract Lottery {
         return uint(keccak256(abi.encodePacked(owner, block.timestamp)));
     }
 
+    // pick a winner and transfer the funds
+    function pickWinner() onlyOwner {
+        uint index = getRandomNumber() % players.length;
+        players[index].transfer(address(this).balance);
+
+        //reset the state of the contract
+        players = new address payable[](0);
+    }
+
+
     // this function kill the smart contract
     //it withdrawals all the funds of the sc and makes it unusable
-    function kill() public OnlyOwner{
+    function kill() public onlyOwner{
 		selfdestruct(msg.sender);
     }
 
