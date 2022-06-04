@@ -21,10 +21,9 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 
 ## Resources
 
-### Solidity
-
-- https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA/videos
+### Ethereum
 - https://github.com/ethereumbook/ethereumbook
+- https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA/videos
 
 ### Rust
 
