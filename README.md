@@ -44,6 +44,8 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 - https://arxiv.org/pdf/2008.04761.pdf
 - https://ethereum.org/en/developers/docs/smart-contracts/security/
 - https://consensys.github.io/smart-contract-best-practices/
+- https://www.youtube.com/watch?v=dDispC5aOMs&list=PLS01nW3RtgopsMpAceFwuyLKH42VW0Nw9
+- https://www.youtube.com/watch?v=T7VQI5EW6ZY&list=PLS01nW3Rtgoos65Y38qr9is9fqnoJ2tmU
 
 ### Blockchain Penetration Testing
 - https://dasp.co/
