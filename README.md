@@ -2,7 +2,8 @@
 Personal notes about Web3, Smart Contracts and Blockchains on a security point of view.
 
 **ToDo**
-- Creare un progetto funzionante in solidity
+- Imparare di più su Flash Loan Attacks
+  - https://www.youtube.com/watch?v=NifGKCiiX3E
 
 **Index**
 - [Resources](#Resources)
