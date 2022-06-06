@@ -4,6 +4,7 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 **ToDo**
 - Imparare di più su Flash Loan Attacks
   - https://www.youtube.com/watch?v=NifGKCiiX3E
+- Continuare con questa playlist https://www.youtube.com/watch?v=A_6vTj887JE&list=PLD_RqipW0-9usElaE6DZEkMpzUM2HJv2v&index=7
 
 **Index**
 - [Resources](#Resources)
@@ -24,9 +25,6 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 ### Ethereum
 
 - https://github.com/ethereumbook/ethereumbook
-
-### Solidity
-
 - https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA/videos
 
 ### Rust
