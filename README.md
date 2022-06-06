@@ -4,7 +4,7 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 **ToDo**
 - Imparare di più su Flash Loan Attacks
   - https://www.youtube.com/watch?v=NifGKCiiX3E
-- Continuare con questa playlist https://www.youtube.com/watch?v=A_6vTj887JE&list=PLD_RqipW0-9usElaE6DZEkMpzUM2HJv2v&index=7
+- Continuare con questa playlist https://www.youtube.com/watch?v=_aXumgdpnPU&list=PLD_RqipW0-9usElaE6DZEkMpzUM2HJv2v&index=6
 
 **Index**
 - [Resources](#Resources)
