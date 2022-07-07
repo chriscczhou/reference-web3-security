@@ -22,6 +22,10 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 
 ## Resources
 
+### Courses
+
+- https://www.sans.org/cyber-security-courses/blockchain-smart-contract-security/
+
 ### Ethereum
 
 - https://github.com/ethereumbook/ethereumbook
