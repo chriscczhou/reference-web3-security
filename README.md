@@ -4,6 +4,7 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 **ToDo**
 - Imparare di più su Flash Loan Attacks
   - https://www.youtube.com/watch?v=NifGKCiiX3E
+  - https://medium.com/coinmonks/how-i-run-a-polygon-node-for-flashloan-bots-71229e1a905d
 - Continuare con questa playlist https://www.youtube.com/watch?v=_aXumgdpnPU&list=PLD_RqipW0-9usElaE6DZEkMpzUM2HJv2v&index=6
 
 **Index**
@@ -30,6 +31,8 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 
 - https://github.com/ethereumbook/ethereumbook
 - https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA/videos
+- https://blog.thallo.io/ethers-js-cheatsheet-skip-the-learning-curve-4abc11729d98
+- https://medium.com/@shub.sharma350/gas-optimizations-in-smart-contracts-a894768b274c
 
 ### Rust
 
@@ -50,6 +53,7 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 - https://consensys.github.io/smart-contract-best-practices/
 - https://www.youtube.com/watch?v=dDispC5aOMs&list=PLS01nW3RtgopsMpAceFwuyLKH42VW0Nw9
 - https://www.youtube.com/watch?v=T7VQI5EW6ZY&list=PLS01nW3Rtgoos65Y38qr9is9fqnoJ2tmU
+- https://blocksecteam.medium.com/when-safetransfer-becomes-unsafe-lesson-from-the-qbridge-security-incident-c32ecd3ce9da
 
 ### Blockchain Penetration Testing
 - https://dasp.co/
@@ -86,6 +90,7 @@ Personal notes about Web3, Smart Contracts and Blockchains on a security point o
 - https://blog.openzeppelin.com/backdooring-gnosis-safe-multisig-wallets/
 - https://blog.openzeppelin.com/security-audits/
 - https://mobile.twitter.com/tornadocash/status/1204745639759884289
+- https://blog.euler.finance/uniswap-oracle-attack-simulator-42d18adf65af
 
 ### Bug Bounty
 - https://immunefi.medium.com/
